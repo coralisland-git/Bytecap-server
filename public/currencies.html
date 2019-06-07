@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ByteCap2</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/coinpage.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <!-- HEADER -->
+            <div class="header">
+                <a href="" class="logo">ByteCap</a>
+                <i class="header-nav-burger"></i>
+                <ul class="reset header-nav">
+                    <i></i>
+                    <li><a href="">Finance</a></li>
+                    <li><a href="">Tech</a></li>
+                    <li class="header-nav-dd"><a href="">Market data</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="" id="mining-calculator">Mining calculator</a></li>
+                </ul>
+                <!--
+                <ul class="reset sign-buttons">
+                    <li class="sign-in"><a href="">Login</a></li>
+                    <li class="sign-up"><a href="">Sign up</a></li>
+                </ul>
+                -->
+                <div class="header-search-btn"></div>
+                <div class="header-search">
+                    <i></i>
+                    <input type="text" placeholder="Search" required>
+                    <button></button>
+                    <ul class="reset search-input-dropdown">
+                        <li><b><img src="img/5.png" width="32px" height="35px" alt=""></b> NEM (XEM)</li>
+                        <li><b><img src="img/2.png" width="13px" height="21px" alt=""></b> NEO (NEO)</li>
+                        <li><b><img src="img/6.png" width="18px" height="18px" alt=""></b> Nexus (NXS)</li>
+                        <li><b><img src="img/4.png" width="15px" height="17px" alt=""></b> Nxt (NXT)</li>
+                        <li><b><img src="img/3.png" width="18px" height="18px" alt=""></b> NAV Coin (NAV)</li>
+                        <li><b><img src="img/1.png" width="18px" height="18px" alt=""></b> NoLimitCoin (NLC2)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-info">
+                Cryptocurrencies: <b>1564</b> / Markets: <b>9326</b>
+                <div class="header-info-center">
+                    Market Cap: <b>$335 883 409 064</b> / 24h Vol: <b>$14 367 726 610</b> / BTC Dominance: <strong>42.1%</strong>
+                </div>
+                <div class="header-info-select header-info-select1">
+                    <select class="header-select-lang">
+                        <option value="">Deutsch</option>
+                        <option value="">English</option>
+                        <option value="">Español</option>
+                        <option value="">Filipino</option>
+                        <option value="">Français</option>
+                        <option value="">हिन्दी</option>
+                        <option value="">Italiano</option>
+                        <option value="">Português Brasil</option>
+                        <option value="">Русский</option>
+                        <option value="">Tiếng Việt</option>
+                    </select>
+                </div>
+                <div class="header-info-select header-info-select2">
+                    <select class="header-select-curreny">
+                        <option value="">USD</option>
+                        <option value="">BRL</option>
+                        <option value="">CHF</option>
+                        <option value="">CNY</option>
+                        <option value="">DKK</option>
+                        <option value="">GBP</option>
+                        <option value="">HUF</option>
+                        <option value="">ILS</option>
+                        <option value="">JPY</option>
+                        <option value="">MXN</option>
+                        <option value="">NOK</option>
+                        <option value="">PHP</option>
+                        <option value="">PLN</option>
+                        <option value="">SEK</option>
+                        <option value="">THB</option>
+                        <option value="">TWD</option>
+                        <option value="">AUD</option>
+                        <option value="">CAD</option>
+                        <option value="">CLP</option>
+                        <option value="">CZK</option>
+                        <option value="">EUR</option>
+                        <option value="">HKD</option>
+                        <option value="">IDR</option>
+                        <option value="">INR</option>
+                        <option value="">KRW</option>
+                        <option value="">MYR</option>
+                        <option value="">NZD</option>
+                        <option value="">PKR</option>
+                        <option value="">RUB</option>
+                        <option value="">SGD</option>
+                        <option value="">TRY</option>
+                        <option value="">ZAR</option>
+                    </select>
+                </div>
+            </div>
+            <!-- /HEADER -->
+        </div>
+        
+        <div id="container">
+            <!-- CONTENT -->
+            <div class="currencies-page">
+                <div class="currencies-page-title">
+                    <h1>Currencies</h1>
+                    <select>
+                        <option value="">USD</option>
+                        <option value="">BTC</option>
+                        <option value="">ETH</option>
+                        <option value="">XRP</option>
+                        <option value="">BCH</option>
+                        <option value="">LTC</option>
+                    </select>
+                    <div class="currencies-page-nav">
+                        <a href="">View all</a>
+                        <a href="">Next 100<i></i></a>
+                    </div>
+                </div>
+                <div class="currencies-page-table">
+                    <div class="currencies-page-table-title">
+                        <span>#</span>
+                        <span>Name</span>
+                        <span>Market Cap</span>
+                        <span>Price</span>
+                        <span>Circulating Supply</span>
+                        <span>Volume (24h)</span>
+                        <span>% Change (24h)</span>
+                        <span>Price Graph (7d)</span>
+                    </div>
+                    
+                    <div class="currencies-page-table-item currencies-popup0">
+                        <span>1</span>
+                        <span><img src="img/ico1.png" alt="">Bitcoin</span>
+                        <span before="Market Cap">$149 830 084 338</span>
+                        <span before="Price">$8 859,29</span>
+                        <span before="Circulating Supply">16 912 200 BTC</span>
+                        <span before="Volume (24h)">$5 183 140 000</span>
+                        <span before="% Change (24h)" class="text-red">-5,73%</span>
+                        <span><img src="img/graph.jpg" alt=""></span>
+                    </div>
+                    <div class="currencies-page-table-item currencies-popup0">
+                        <span>2</span>
+                        <span><img src="img/ico2.png" alt="">Ethereum</span>
+                        <span before="Market Cap">$68 278 657 182</span>
+                        <span before="Price">$695,91</span>
+                        <span before="Circulating Supply">98 114 911 ETH</span>
+                        <span before="Volume (24h)">$1 488 390 000</span>
+                        <span before="% Change (24h)" class="text-green">8,03%</span>
+                        <span><img src="img/graph2.jpg" alt=""></span>
+                    </div>
+                    <div class="currencies-page-table-item currencies-popup0">
+                        <span>3</span>
+                        <span><img src="img/ico1.png" alt="">Bitcoin Cash</span>
+                        <span before="Market Cap">$31 520 196 520</span>
+                        <span before="Price">$0,806309</span>
+                        <span before="Circulating Supply">17 011 300 BCH</span>
+                        <span before="Volume (24h)">$400 919 000</span>
+                        <span before="% Change (24h)" class="text-green">5,53%</span>
+                        <span><img src="img/graph.jpg" alt=""></span>
+                    </div>
+                    <div class="currencies-page-table-item currencies-popup0">
+                        <span>4</span>
+                        <span><img src="img/ico3.png" alt="">Ripple</span>
+                        <span before="Market Cap">$17 151 643 225</span>
+                        <span before="Price">$1 008,25</span>
+                        <span before="Circulating Supply">39 091 956 706 XRP*</span>
+                        <span before="Volume (24h)">$367 084 000</span>
+                        <span before="% Change (24h)" class="text-red">-7,89%</span>
+                        <span><img src="img/graph2.jpg" alt=""></span>
+                    </div>
+                    <div class="currencies-page-table-item currencies-popup0">
+                        <span>5</span>
+                        <span><img src="img/ico4.png" alt="">IOTA</span>
+                        <span before="Market Cap">$10 023 903 735</span>
+                        <span before="Price">$180,37</span>
+                        <span before="Circulating Supply">2 779 530 283 MIOTA*</span>
+                        <span before="Volume (24h)">$626 323 000</span>
+                        <span before="% Change (24h)" class="text-green">3.73%</span>
+                        <span><img src="img/graph.jpg" alt=""></span>
+                    </div>
+                    <div class="currencies-page-table-item currencies-popup0">
+                        <span>6</span>
+                        <span><img src="img/ico5.png" alt="">Monero</span>
+                        <span before="Market Cap">$5 573 854 000</span>
+                        <span before="Price">$85,75</span>
+                        <span before="Circulating Supply">16 912 200 BTC</span>
+                        <span before="Volume (24h)">$5 183 140 000</span>
+                        <span before="% Change (24h)" class="text-red">-11.28%</span>
+                        <span><img src="img/graph2.jpg" alt=""></span>
+                    </div>
+                    
+                </div>
+                <div class="currencies-page-down">
+                    <div class="currencies-page-nav">
+                        <a href="">View all</a>
+                        <a href="">Next 100<i></i></a>
+                    </div>
+                    * Not Mineable<br>
+                    ** Significantly Premined 
+                </div>
+            </div>
+            <!-- /CONTENT -->
+        </div>
+        
+        <div class="clear"></div>
+        <div id="spacer"></div>
+    </div>
+    <div id="footer">
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-copy">ByteCAP © 2018</div>
+            <ul class="reset footer-nav">
+                <span>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Contact us</a></li>
+                </span>
+                <span>
+                    <li><a href="">Request Form</a></li>
+                    <li><a href="">Advertise</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">API</a></li>
+                </span>
+            </ul>
+            <div class="footer-update">
+                <span>Last updated:</span>
+                Aug 19, 2017 5:35 PM UTC
+            </div>
+        </div>
+        <!-- /FOOTER -->
+    </div>
+    
+    <!-- calculator popup -->
+    <div id="fade"></div>
+    <div class="calculator-popup">
+        <div class="calculator-popup-skroll">
+        <i class="calculator-popup-close"></i>
+        <div class="calculator-popup-title">
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                                
+                        <ul class="reset calculator-popup-nav">
+                            <li class="calculator-popup-nav-active"><a href="">GPU</a></li>
+                            <li><a href="">ASIC</a></li>
+                            <li><a href="">COINS</a></li>
+                        </ul>
+                        <ul class="reset calculator-popup-nav2">
+                            <li><a href="">Eth+</a></li>
+                            <li><a href="">Etc+</a></li>
+                            <li><a href="">Exp+</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calculator-popup-add">
+                <input type="text" placeholder="Add a new dataset">
+                <button>Add</button>
+            </div>
+        </div>
+        
+        
+        
+            <div class="calculator-popup-1">
+                <div class="calculator-popup-1-item calculator-popup-1-item-active">
+                    <input type="text" value="35">
+                    <span>280x</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>380</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>Fury</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>470</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>480</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>570</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>750Ti</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>1060 6Gb</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>1070</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>1080</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>1080Ti</span>
+                </div>
+                <div class="calculator-popup-1-item">
+                    <input type="text" value="0">
+                    <span>1060 8Gb</span>
+                </div>
+            </div>
+
+            <div class="calculator-popup-2">
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        Ethash <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item">
+                    <div class="calculator-popup-2-item-btn">
+                        Groestl <input type="checkbox" class="calculator-checkbox">
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="0.0" disabled>
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="0.0" disabled>
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        X11Gost <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        CryptoNight <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        Equihash <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        Lyra2REv2 <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        NeoScrypt <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        Blake (2b) <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        Blake (4b) <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item">
+                    <div class="calculator-popup-2-item-btn">
+                        Pascal <input type="checkbox" class="calculator-checkbox">
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="0.0" disabled>
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="0.0" disabled>
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-popup-2-item calculator-checkbox-active">
+                    <div class="calculator-popup-2-item-btn">
+                        CryptoNight <input type="checkbox" class="calculator-checkbox" checked>
+                    </div>
+                    <div class="calculator-popup-2-item-content">
+                        <div class="calculator-popup-rate">
+                            <b>Hash rate</b>
+                            <div>
+                                <input type="text" value="35.0">
+                                <span>Mh/s</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-rate">
+                            <b>Power</b>
+                            <div>
+                                <input type="text" value="1.0">
+                                <span>W</span>
+                            </div>
+                        </div>
+                        <div class="calculator-popup-cost">
+                            <b>Daily cost</b>
+                            <span>$0.97</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-popup-2-sort">
+                    <div class="calculator-popup-2-sort-item">
+                        <b>Cost</b>
+                        <input type="text" value="0.0">
+                        <span>$/kWh</span>
+                    </div>
+                    <div class="calculator-popup-2-sort-item">
+                        <b>Sort by</b>
+                        <select>
+                            <option value="">Difficulty</option>
+                            <option value="">NetHash</option>
+                            <option value="">Estimated Rewards</option>
+                            <option value="">Estimated Rewards 24</option>
+                            <option value="">Market Cap</option>
+                            <option value="">Exchange Volume</option>
+                            <option value="">Current revenue</option>
+                            <option value="">NetHash</option>
+                            <option value="">Difficulty</option>
+                            <option value="">Estimated Rewards</option>
+                            <option value="">Estimated Rewards 24</option>
+                            <option value="">Market Cap</option>
+                            <option value="">Exchange Volume</option>
+                            <option value="">Current revenue</option>
+                        </select>
+                    </div>
+                    <div class="calculator-popup-2-sort-item">
+                        <b>Volume filter</b>
+                        <select>
+                            <option value="">Any volume</option>
+                            <option value="">Difficulty</option>
+                            <option value="">Estimated Rewards</option>
+                            <option value="">Estimated Rewards 24</option>
+                            <option value="">Market Cap</option>
+                            <option value="">Exchange Volume</option>
+                            <option value="">Current revenue</option>
+                            <option value="">NetHash</option>
+                            <option value="">Difficulty</option>
+                            <option value="">Estimated Rewards</option>
+                            <option value="">Estimated Rewards 24</option>
+                            <option value="">Market Cap</option>
+                            <option value="">Exchange Volume</option>
+                            <option value="">Current revenue</option>
+                        </select>
+                    </div>
+                    <div class="calculator-popup-2-sort-item">
+                        <b>Difficulty for revenue</b>
+                        <select>
+                            <option value="">Average last 24h</option>
+                            <option value="">Difficulty</option>
+                            <option value="">Estimated Rewards</option>
+                            <option value="">Estimated Rewards 24</option>
+                            <option value="">Market Cap</option>
+                            <option value="">Exchange Volume</option>
+                            <option value="">Current revenue</option>
+                            <option value="">NetHash</option>
+                            <option value="">Difficulty</option>
+                            <option value="">Estimated Rewards</option>
+                            <option value="">Estimated Rewards 24</option>
+                            <option value="">Market Cap</option>
+                            <option value="">Exchange Volume</option>
+                            <option value="">Current revenue</option>
+                        </select>
+                    </div>
+                    <div class="calculator-popup-2-sort-item calculator-popup-2-sort-item-calc">
+                        <b>Selected exchanges</b>
+                        <div class="calc-selected">
+                            <div class="tag-area">
+                                <div class="tag">Bittrex<span></span></div>
+                                <div class="tag">Poloniex<span></span></div>
+                                <div class="tag">C-Cex<span></span></div>
+                            </div>
+                            <div class="calc-selected-dropdown">
+                                <ul class="reset dropdown-menu">
+                                    <li class="added">Bittrex</li>
+                                    <li>Bleutrade</li>
+                                    <li>Bter</li>
+                                    <li class="added">Poloniex</li>
+                                    <li>Cryptopia</li>
+                                    <li class="added">C-Cex</li>
+                                    <li>Skunkhash</li>
+                                    <li>Pascal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-popup-2-buttons">
+                        <button>Calculate</button>
+                        <button>Defaults</button>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+            <div class="calculator-popup-2-alert">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempore
+            </div>
+        
+        </div>
+    </div>
+    <!-- /calculator popup -->
+    
+    <div class="coinpage-popup">
+        <em></em>
+        <div class="calculator-popup-skroll">
+        <div class="coinpage">
+            <div class="coinpage-title">
+                <img src="img/ico-big1.png" alt="">
+                <h1>Bitcoin <b>BTC</b></h1>
+            </div>
+            <div class="coinpage-info">
+                <span class="coinpage-info-drop">
+                    <select>
+                        <option value="">Website</option>
+                        <option value="">Website 2</option>
+                        <option value="">Explorer</option>
+                        <option value="">Explorer 2</option>
+                        <option value="">Explorer 3</option>
+                        <option value="">Message Board</option>
+                        <option value="">Message Board 2</option>
+                        <option value="">Source Code</option>
+                    </select>
+                </span>
+                <div class="coinpage-info-links">
+                    <a href="">Mineable</a>
+                    <a href="">Coin</a>
+                </div>
+                <div class="coinpage-info-price">
+                    <h2>$9 647,34 <b class="coinpage-info-price-down">3.45%</b></h2>
+                    <span>0.02574450 BTC <b class="coinpage-info-price-up">0.57%</b></span>
+                </div>
+            </div>
+            <div class="coinpage-info2">
+                <div class="coinpage-info2-item">
+                    <span>Market Cap</span>
+                    <b>$19 394 633 877 USD</b>
+                    2 022 843 BTC
+                </div>
+                <div class="coinpage-info2-item">
+                    <span>Volume (24h)</span>
+                    <b>$513 174 000 USD</b>
+                    53 524 BTC
+                </div>
+                <div class="coinpage-info2-item">
+                    <span>Circulating Supply</span>
+                    <b>17 012 688 BCH</b>
+                </div>
+                <div class="coinpage-info2-item">
+                    <span>Max Supply</span>
+                    <b>21 000 000 BCH</b>
+                </div>
+                <div class="coinpage-info2-links">
+                    <span>1</span>
+                    <a class="coinpage-info2-add" href="">Add to portfolio</a>
+                    <a class="coinpage-info2-buy" href="">Buy instantly</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <ul class="reset coinpage-tabs">
+                    <div class="swiper-container swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <li class="current">Charts</li>
+                                <li>Markets</li>
+                                <li>Social</li>
+                                <li>Tools</li>
+                                <li>Historical data</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </ul>
+                <div class="box visible">
+                    <div class="coinpage-chart">
+                        <div class="coinpage-chart-top">
+                            <b>
+                            <i class="date-range"></i>Date Range
+                            <ul class="reset">
+                                <li class="active">1D</li>
+                                <li>7D</li>
+                                <li>1M</li>
+                                <li>3M</li>
+                                <li>1Y</li>
+                                <li>YTD</li>
+                            </ul>
+                            </b>
+                            <b>
+                            <i class="interval"></i>Interval
+                            <span class="coinpage-chart-interval">
+                                <select>
+                                    <option value="">1Min</option>
+                                    <option value="">2Mins</option>
+                                    <option value="">5Mins</option>
+                                    <option value="">15Mins</option>
+                                    <option value="">30Mins</option>
+                                    <option value="">1Hour</option>
+                                    <option value="">1Day</option>
+                                    <option value="">1Week</option>
+                                    <option value="">1Month</option>
+                                    <option value="">1Year</option>
+                                </select>
+                            </span>
+                            </b>
+                        </div>
+                        <img src="img/chart.png" alt="">
+                        <div class="coinpage-chart-links">
+                            <a class="coinpage-chart-link-yellow" href="">Price BTC</a>
+                            <a class="coinpage-chart-link-blue" href="">Market Cap</a>
+                            <a class="disabled" href="">Price USD</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="markets-title">
+                        <h1>Bitcoin Markets</h1>
+                        <div class="markets-title-select">
+                            <select>
+                                <option value="">USD</option>
+                                <option value="">BTC</option>
+                                <option value="">ETH</option>
+                                <option value="">XRP</option>
+                                <option value="">BCH</option>
+                                <option value="">LTC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="markets-table">
+                        <div class="markets-table-title">
+                            <span>#</span>
+                            <span>Source</span>
+                            <span>Pair</span>
+                            <span>Volume (24h)</span>
+                            <span>Price</span>
+                            <span>Volume (%)</span>
+                            <span>Updated</span>
+                        </div>
+                        <div class="markets-table-item">
+                            <span>1</span>
+                            <span>Bittrex</span>
+                            <span before="Pair">NEO/BTC</span>
+                            <span before="Volume (24h)">$111,237,000</span>
+                            <span before="Price">$4681.18</span>
+                            <span before="Volume (%)">6.18%</span>
+                            <span before="Updated">Recently</span>
+                        </div>
+                        <div class="markets-table-item">
+                            <span>2</span>
+                            <span>Binance</span>
+                            <span before="Pair">BTC/USDT</span>
+                            <span before="Volume (24h)">$406 205 000</span>
+                            <span before="Price">$9 144,71</span>
+                            <span before="Volume (%)">6,20%</span>
+                            <span before="Updated">Recently</span>
+                        </div>
+                        <div class="markets-table-item">
+                            <span>3</span>
+                            <span>OKEx</span>
+                            <span before="Pair">BTC/USDT</span>
+                            <span before="Volume (24h)">$370 785 000</span>
+                            <span before="Price">$9 108,88</span>
+                            <span before="Volume (%)">5,66%</span>
+                            <span before="Updated"><b>3 hours ago</b></span>
+                        </div>
+                        <div class="markets-table-item">
+                            <span>4</span>
+                            <span>bitFlyer</span>
+                            <span before="Pair">BTC/JPY</span>
+                            <span before="Volume (24h)">$226 389 000</span>
+                            <span before="Price">$9 174,39</span>
+                            <span before="Volume (%)">3,46%</span>
+                            <span before="Updated">Recently</span>
+                        </div>
+                        <div class="markets-table-item">
+                            <span>5</span>
+                            <span>Bithumb</span>
+                            <span before="Pair">BTC/KRW</span>
+                            <span before="Volume (24h)">$198 791 000</span>
+                            <span before="Price">$9 144,71</span>
+                            <span before="Volume (%)">2,80%</span>
+                            <span before="Updated">Recently</span>
+                        </div>
+                        <div class="markets-table-item">
+                            <span>6</span>
+                            <span>GDAX</span>
+                            <span before="Pair">BTC/USDT</span>
+                            <span before="Volume (24h)">$183 512 000</span>
+                            <span before="Price">$9 109,00</span>
+                            <span before="Volume (%)">2,74%</span>
+                            <span before="Updated">Recently</span>
+                        </div>
+                    </div>
+                    <div class="markets-table-info">
+                        * Price Excluded<br>
+                        ** Volume Excluded - No Trading Fees<br>
+                        *** Price/Volume Excluded - Outlier Detected
+                    </div>
+                </div>
+                <div class="box">
+                    
+                    <div class="tabs-social2">
+                        <div class="">
+                            <a class="twitter-timeline" href="https://twitter.com/bitcoin" data-widget-id="506520279636377601" data-screen-name="bitcoin">Tweets by @bitcoin</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                            <div class="rembeddit" style="font-family:verdana,arial,helvetica,sans-serif;background-color: #FFFFFF;border: 1px solid #336699;">
+                              <div class="reddit-header" style="padding: 5px; padding-bottom:1px;background-color:#CEE3F8"><h4 class="reddit-title" style="margin:0;padding-bottom:3px"><a href="https://www.reddit.com/r/Bitcoin/" style="margin:5px;"><img src="https://www.reddit.com/static/spreddit1.gif" alt="" style="border:none"></a>ссылки от <a style="text-decoration:none;color:#336699" href="https://www.reddit.com/r/Bitcoin/">Bitcoin.reddit.com</a></h4></div><div class="rembeddit-content" style="padding:5px;"><div style="margin-left:5px;margin-top:7px;"><div class="reddit-link even first-half thing id-t3_6jlop4 "><a href="https://www.reddit.com/r/Bitcoin/comments/6jlop4/rbitcoin_faq_newcomers_please_read/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://www.reddit.com/r/Bitcoin/comments/6jlop4/rbitcoin_faq_newcomers_please_read/">/r/Bitcoin FAQ - Newcomers please read</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">1053 очка</span><span class="score unvoted">1054 очка</span><span class="score likes" style="display: none;">1055 очков</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6jlop4/rbitcoin_faq_newcomers_please_read/">716 комментариев</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link odd first-half thing id-t3_6z776p "><a href="https://www.reddit.com/r/Bitcoin/comments/6z776p/breaking_bitcoin_day_2_livestream/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://www.youtube.com/watch?v=0WCaoGiAOHE">Breaking Bitcoin - Day 2 Livestream</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">99 очков</span><span class="score unvoted">100 очков</span><span class="score likes" style="display: none;">101 очко</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z776p/breaking_bitcoin_day_2_livestream/">19 комментариев</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link even first-half thing id-t3_6z7bqf "><a href="https://www.reddit.com/r/Bitcoin/comments/6z7bqf/can_relate_not_really/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://imgur.com/a/Sl2cX">Can relate (not really)</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">527 очков</span><span class="score unvoted">528 очков</span><span class="score likes" style="display: none;">529 очков</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z7bqf/can_relate_not_really/">58 комментариев</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link odd first-half thing id-t3_6z7c29 "><a href="https://www.reddit.com/r/Bitcoin/comments/6z7c29/trying_to_be_more_gallant_these_days/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://i.redd.it/ap93pjqbv0lz.jpg">Trying to be more gallant these days</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">342 очка</span><span class="score unvoted">343 очка</span><span class="score likes" style="display: none;">344 очка</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z7c29/trying_to_be_more_gallant_these_days/">32 комментария</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link even first-half thing id-t3_6z8mfs "><a href="https://www.reddit.com/r/Bitcoin/comments/6z8mfs/ex_bitmain_employee_confirms_bitmainbcash_link/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://www.reddit.com/r/Bitcoin/comments/6z8mfs/ex_bitmain_employee_confirms_bitmainbcash_link/">Ex Bitmain employee confirms bitmain/bcash link onstage at breaking Bitcoin. NYA done.</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">124 очка</span><span class="score unvoted">125 очков</span><span class="score likes" style="display: none;">126 очков</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z8mfs/ex_bitmain_employee_confirms_bitmainbcash_link/">83 комментария</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link odd first-half thing id-t3_6z91r7 "><a href="https://www.reddit.com/r/Bitcoin/comments/6z91r7/yes_the_price_is_hypnotic_to_watch_but_yesterday/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://www.reddit.com/r/Bitcoin/comments/6z91r7/yes_the_price_is_hypnotic_to_watch_but_yesterday/">Yes the price is hypnotic to watch, but yesterday we had a Bitcoin round-table among friends and the things that were being discussed were well beyond price speculation, it was more like planning for a completely different world. This is why I enjoy Bitcoin.</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">82 очка</span><span class="score unvoted">83 очка</span><span class="score likes" style="display: none;">84 очка</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z91r7/yes_the_price_is_hypnotic_to_watch_but_yesterday/">12 комментариев</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link even second-half thing id-t3_6z5f27 "><a href="https://www.reddit.com/r/Bitcoin/comments/6z5f27/soon_to_be_the_standard/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://i.redd.it/7tw5n7ymeykz.jpg">Soon to be the standard</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">1346 очков</span><span class="score unvoted">1347 очков</span><span class="score likes" style="display: none;">1348 очков</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z5f27/soon_to_be_the_standard/">32 комментария</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link odd second-half thing id-t3_6z9w15 "><a href="https://www.reddit.com/r/Bitcoin/comments/6z9w15/breaking_news_miners_say_they_do_not_have_to/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://twitter.com/MadBitcoins/status/906906505106149376">Breaking News - Miners say they do not have to activate the 2X hard fork. (NYA signers only agreed to sign to maintain a single chain, not 3 !!!).</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">• points</span><span class="score unvoted">• points</span><span class="score likes" style="display: none;">• points</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z9w15/breaking_news_miners_say_they_do_not_have_to/">10 комментариев</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link even second-half thing id-t3_6z7unu "><a href="https://www.reddit.com/r/Bitcoin/comments/6z7unu/why_2x_support_must_end_today/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://www.reddit.com/r/Bitcoin/comments/6z7unu/why_2x_support_must_end_today/">Why 2X support must end today.</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">135 очков</span><span class="score unvoted">136 очков</span><span class="score likes" style="display: none;">137 очков</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z7unu/why_2x_support_must_end_today/">116 комментариев</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link odd second-half thing id-t3_6z7rcq "><a href="https://www.reddit.com/r/Bitcoin/comments/6z7rcq/hodl/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://i.redd.it/6bhamk31k1lz.jpg">HODL</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">140 очков</span><span class="score unvoted">141 очко</span><span class="score likes" style="display: none;">142 очка</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z7rcq/hodl/">22 комментария</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div><div class="reddit-link even second-half thing id-t3_6z7k1e "><a href="https://www.reddit.com/r/Bitcoin/comments/6z7k1e/bitcoin_store_spotted_in_marbella_spain/" class="reddit-voting-arrows" target="_blank" style="float:left; display:block;"><img src="https://www.reddit.com/static/widget_arrows.gif" alt="vote" style="border:none;margin-top:3px;"></a><div class="reddit-entry entry unvoted" style="margin-left: 28px; min-height:32px;"><a class="reddit-link-title may-blank" style="text-decoration:none;color:#336699;font-size:small;" href="https://i.redd.it/t6qv763s81lz.jpg">Bitcoin store spotted in Marbella, Spain</a><br><small style="color:gray;"><span class="score dislikes" style="display: none;">147 очков</span><span class="score unvoted">148 очков</span><span class="score likes" style="display: none;">149 очков</span> | <a class="reddit-comment-link may-blank" style="color:gray" href="https://www.reddit.com/r/Bitcoin/comments/6z7k1e/bitcoin_store_spotted_in_marbella_spain/">4 комментария</a></small></div><div class="reddit-link-end" style="clear:left; padding:3px;"></div></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="tabs-tools-left">
+                        <div class="tabs-tools-left-title">
+                            <b>Website Widget</b>
+                            <a href=""></a>
+                        </div>
+                        <textarea class="tabs-tools-textarea" rows="6"><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD"  data-secondary="BTC"></div></textarea>
+                    </div>
+                    <div class="tabs-tools-right">
+                        <div class="tabs-tools-right-title">
+                            <b>Example</b>
+                            <a href=""></a>
+                        </div>
+                        <div class="tabs-tools-right-widget">
+                            <div class="tabs-tools-right-widget1">
+                                <i>1</i>
+                                <img src="img/ico-big1.png" alt="">
+                                <h6>Bitcoin <b>BTC</b></h6>
+                                <span>1 124,10 USD <strong class="tools-green">(1.91%)</strong></span>
+                                0.07133380 BTC
+                            </div>
+                            <div class="tabs-tools-right-widget2">
+                                <span>$69.21 B USD<b>MARKET CAP</b></span>
+                                <span>$2.4 B USD<b>VOLUME(24H)</b></span>
+                            </div>
+                            <div class="tabs-tools-right-copy">Powered by Bytecap.com</div>
+                        </div>
+                    </div>
+                    <div class="tabs-tools-right-widget-d"></div>
+                    <div class="tabs-tools-down">
+                        <span>
+                            <b>Api Ticker</b>
+                            <input type="text" value="https://api.Bytecap.com/v1/ticker/ethereum/">
+                            <a href=""></a>
+                        </span>
+                        <a class="tools-api-docs" href="">Api Docs</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="markets-title data-title">
+                        <h1>Historical Data</h1>
+                        <br>Currency in USD. Open/Close in UTC time
+                        <div class="data-calendar">
+                            Aug 8, 2017 - Sep 7, 2017
+                            <span>
+                                <ul class="reset">
+                                    <li class="active"><a href="">Last 7 Days</a></li>
+                                    <li><a href="">Last 30 Days</a></li>
+                                    <li><a href="">Last 3 Months</a></li>
+                                    <li><a href="">Last 12 Months </a></li>
+                                    <li><a href="">Year To Date </a></li>
+                                    <li><a href="">All Time</a></li>
+                                    <li><a href="">Custom Range</a></li>
+                                </ul>
+                                <button>Apply</button>
+                                <button>Cancel</button>
+                            </span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="data-table">
+                        <div class="data-table-title">
+                            <span>Date</span>
+                            <span>Open</span>
+                            <span>High</span>
+                            <span>Low</span>
+                            <span>Close</span>
+                            <span>Volume</span>
+                            <span>Market Cap</span>
+                        </div>
+                        <div class="data-table-item">
+                            <span before="Date">Mar 12, 2018</span>
+                            <span before="Open">9 602,93</span>
+                            <span before="High">9 937,50</span>
+                            <span before="Low">8 956,43</span>
+                            <span before="Close">9 205,12</span>
+                            <span before="Volume">6 457 400 000</span>
+                            <span before="Market Cap">162 421 000 000</span>
+                        </div>
+                        <div class="data-table-item">
+                            <span before="Date">Mar 11, 2018</span>
+                            <span before="Open">8 852,78</span>
+                            <span before="High">9 711,89</span>
+                            <span before="Low">8 607,12</span>
+                            <span before="Close">9 578,63</span>
+                            <span before="Volume">6 296 370 000</span>
+                            <span before="Market Cap">149 716 000 000</span>
+                        </div>
+                        <div class="data-table-item">
+                            <span before="Date">Mar 10, 2018</span>
+                            <span before="Open">9 350,59</span>
+                            <span before="High">9 531,32</span>
+                            <span before="Low">8 828,47</span>
+                            <span before="Close">8 866,00</span>
+                            <span before="Volume">5 386 320 000</span>
+                            <span before="Market Cap">159 185 000 000</span>
+                        </div>
+                        <div class="data-table-item">
+                            <span before="Date">Mar 09, 2018</span>
+                            <span before="Open">9 414,69</span>
+                            <span before="High">9 466,35</span>
+                            <span before="Low">8 513,03</span>
+                            <span before="Close">9 337,55</span>
+                            <span before="Volume">8 704 190 000</span>
+                            <span before="Market Cap">168 241 000 000</span>
+                        </div>
+                        <div class="data-table-item">
+                            <span before="Date">Mar 08, 2018</span>
+                            <span before="Open">10 803,90</span>
+                            <span before="High">10 147,40</span>
+                            <span before="Low">9 335,87</span>
+                            <span before="Close">9 395,01</span>
+                            <span before="Volume">7 186 090 000</span>
+                            <span before="Market Cap">194 378 000 000</span>
+                        </div>
+                        <div class="data-table-item">
+                            <span before="Date">Mar 07, 2018</span>
+                            <span before="Open">11 500,10</span>
+                            <span before="High">10 929,50</span>
+                            <span before="Low">11 443,90</span>
+                            <span before="Close">10 779,90</span>
+                            <span before="Volume">8 797 910 000</span>
+                            <span before="Market Cap">194 903 000 000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            new Swiper('.swiper-container',{
+                scrollContainer: true
+            });
+            new Swiper('.swiper-container2',{
+                scrollContainer: true
+            });
+        });
+    </script>
+    
+</body>
+</html>
