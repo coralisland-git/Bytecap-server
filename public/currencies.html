@@ -5,6 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>ByteCap2</title>
+
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="css/calculator.css">
     <link rel="stylesheet" href="css/coinpage.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/dragtable.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -126,80 +128,83 @@
                         <a href="">Next 100<i></i></a>
                     </div>
                 </div>
-                <div class="currencies-page-table">
-                    <div class="currencies-page-table-title">
-                        <span>#</span>
-                        <span>Name</span>
-                        <span>Market Cap</span>
-                        <span>Price</span>
-                        <span>Circulating Supply</span>
-                        <span>Volume (24h)</span>
-                        <span>% Change (24h)</span>
-                        <span>Price Graph (7d)</span>
-                    </div>
+                <table class="currencies-page-table" id="currencies-page-table-fixed">
+                    <thead>
+                        <tr class="currencies-page-table-title">
+                            <th class="crypto-no">#</td>
+                            <th class="crypto-logo">Name</th>
+                            <th class="crypto-market-cap">Market Cap</th>
+                            <th class="crypto-price">Price</th>
+                            <th class="crypto-supply">Circulating Supply</th>
+                            <th class="crypto-volume">Volume (24h)</th>
+                            <th class="crypto-change">% Change (24h)</th>
+                            <th class="crypto-graph">Price Graph (7d)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="currencies-page-table-item currencies-popup0">
+                            <td class="crypto-no">1</td>
+                            <td class="crypto-logo"><img src="img/ico1.png" alt="">Bitcoin</td>
+                            <td class="crypto-market-cap" before="Market Cap">$149 830 084 338</td>
+                            <td class="crypto-price" before="Price">$8 859,29</td>
+                            <td class="crypto-supply" before="Circulating Supply">16 912 200 BTC</td>
+                            <td class="crypto-volume" before="Volume (24h)">$5 183 140 000</td>
+                            <td class="crypto-change" before="% Change (24h)" class="text-red">-5,73%</td>
+                            <td class="crypto-graph"><img src="img/graph.jpg" alt=""></td>
+                        </tr>
+                        <tr class="currencies-page-table-item currencies-popup0">
+                            <td class="crypto-no">2</td>
+                            <td class="crypto-logo"><img src="img/ico2.png" alt="">Ethereum</td>
+                            <td class="crypto-market-cap" before="Market Cap">$68 278 657 182</td>
+                            <td class="crypto-price" before="Price">$695,91</td>
+                            <td class="crypto-supply" before="Circulating Supply">98 114 911 ETH</td>
+                            <td class="crypto-volume" before="Volume (24h)">$1 488 390 000</td>
+                            <td class="crypto-change" before="% Change (24h)" class="text-green">8,03%</td>
+                            <td class="crypto-graph"><img src="img/graph2.jpg" alt=""></td>
+                        </tr>
+                        <tr class="currencies-page-table-item currencies-popup0">
+                            <td class="crypto-no">3</td>
+                            <td class="crypto-logo"><img src="img/ico1.png" alt="">Bitcoin Cash</td>
+                            <td class="crypto-market-cap" before="Market Cap">$31 520 196 520</td>
+                            <td class="crypto-price" before="Price">$0,806309</td>
+                            <td class="crypto-supply" before="Circulating Supply">17 011 300 BCH</td>
+                            <td class="crypto-volume" before="Volume (24h)">$400 919 000</td>
+                            <td class="crypto-change" before="% Change (24h)" class="text-green">5,53%</td>
+                            <td class="crypto-graph"><img src="img/graph.jpg" alt=""></td>
+                        </tr>
+                        <tr class="currencies-page-table-item currencies-popup0">
+                            <td class="crypto-no">4</td>
+                            <td class="crypto-logo"><img src="img/ico3.png" alt="">Ripple</td>
+                            <td class="crypto-market-cap" before="Market Cap">$17 151 643 225</td>
+                            <td class="crypto-price" before="Price">$1 008,25</td>
+                            <td class="crypto-supply" before="Circulating Supply">39 091 956 706 XRP*</td>
+                            <td class="crypto-volume" before="Volume (24h)">$367 084 000</td>
+                            <td class="crypto-change" before="% Change (24h)" class="text-red">-7,89%</td>
+                            <td class="crypto-graph"><img src="img/graph2.jpg" alt=""></td>
+                        </tr>
+                        <tr class="currencies-page-table-item currencies-popup0">
+                            <td class="crypto-no">5</td>
+                            <td class="crypto-logo"><img src="img/ico4.png" alt="">IOTA</td>
+                            <td class="crypto-market-cap" before="Market Cap">$10 023 903 735</td>
+                            <td class="crypto-price" before="Price">$180,37</td>
+                            <td class="crypto-supply" before="Circulating Supply">2 779 530 283 MIOTA*</td>
+                            <td class="crypto-volume" before="Volume (24h)">$626 323 000</td>
+                            <td class="crypto-change" before="% Change (24h)" class="text-green">3.73%</td>
+                            <td class="crypto-graph"><img src="img/graph.jpg" alt=""></td>
+                        </tr>
+                        <tr class="currencies-page-table-item currencies-popup0">
+                            <td class="crypto-no">6</td>
+                            <td class="crypto-logo"><img src="img/ico5.png" alt="">Monero</td>
+                            <td class="crypto-market-cap" before="Market Cap">$5 573 854 000</td>
+                            <td class="crypto-price" before="Price">$85,75</td>
+                            <td class="crypto-supply" before="Circulating Supply">16 912 200 BTC</td>
+                            <td class="crypto-volume" before="Volume (24h)">$5 183 140 000</td>
+                            <td class="crypto-change" before="% Change (24h)" class="text-red">-11.28%</td>
+                            <td class="crypto-graph"><img src="img/graph2.jpg" alt=""></td>
+                        </tr>
+                    </tbody>
                     
-                    <div class="currencies-page-table-item currencies-popup0">
-                        <span>1</span>
-                        <span><img src="img/ico1.png" alt="">Bitcoin</span>
-                        <span before="Market Cap">$149 830 084 338</span>
-                        <span before="Price">$8 859,29</span>
-                        <span before="Circulating Supply">16 912 200 BTC</span>
-                        <span before="Volume (24h)">$5 183 140 000</span>
-                        <span before="% Change (24h)" class="text-red">-5,73%</span>
-                        <span><img src="img/graph.jpg" alt=""></span>
-                    </div>
-                    <div class="currencies-page-table-item currencies-popup0">
-                        <span>2</span>
-                        <span><img src="img/ico2.png" alt="">Ethereum</span>
-                        <span before="Market Cap">$68 278 657 182</span>
-                        <span before="Price">$695,91</span>
-                        <span before="Circulating Supply">98 114 911 ETH</span>
-                        <span before="Volume (24h)">$1 488 390 000</span>
-                        <span before="% Change (24h)" class="text-green">8,03%</span>
-                        <span><img src="img/graph2.jpg" alt=""></span>
-                    </div>
-                    <div class="currencies-page-table-item currencies-popup0">
-                        <span>3</span>
-                        <span><img src="img/ico1.png" alt="">Bitcoin Cash</span>
-                        <span before="Market Cap">$31 520 196 520</span>
-                        <span before="Price">$0,806309</span>
-                        <span before="Circulating Supply">17 011 300 BCH</span>
-                        <span before="Volume (24h)">$400 919 000</span>
-                        <span before="% Change (24h)" class="text-green">5,53%</span>
-                        <span><img src="img/graph.jpg" alt=""></span>
-                    </div>
-                    <div class="currencies-page-table-item currencies-popup0">
-                        <span>4</span>
-                        <span><img src="img/ico3.png" alt="">Ripple</span>
-                        <span before="Market Cap">$17 151 643 225</span>
-                        <span before="Price">$1 008,25</span>
-                        <span before="Circulating Supply">39 091 956 706 XRP*</span>
-                        <span before="Volume (24h)">$367 084 000</span>
-                        <span before="% Change (24h)" class="text-red">-7,89%</span>
-                        <span><img src="img/graph2.jpg" alt=""></span>
-                    </div>
-                    <div class="currencies-page-table-item currencies-popup0">
-                        <span>5</span>
-                        <span><img src="img/ico4.png" alt="">IOTA</span>
-                        <span before="Market Cap">$10 023 903 735</span>
-                        <span before="Price">$180,37</span>
-                        <span before="Circulating Supply">2 779 530 283 MIOTA*</span>
-                        <span before="Volume (24h)">$626 323 000</span>
-                        <span before="% Change (24h)" class="text-green">3.73%</span>
-                        <span><img src="img/graph.jpg" alt=""></span>
-                    </div>
-                    <div class="currencies-page-table-item currencies-popup0">
-                        <span>6</span>
-                        <span><img src="img/ico5.png" alt="">Monero</span>
-                        <span before="Market Cap">$5 573 854 000</span>
-                        <span before="Price">$85,75</span>
-                        <span before="Circulating Supply">16 912 200 BTC</span>
-                        <span before="Volume (24h)">$5 183 140 000</span>
-                        <span before="% Change (24h)" class="text-red">-11.28%</span>
-                        <span><img src="img/graph2.jpg" alt=""></span>
-                    </div>
-                    
-                </div>
+                </table>
                 <div class="currencies-page-down">
                     <div class="currencies-page-nav">
                         <a href="">View all</a>
@@ -1050,6 +1055,9 @@
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="js/jquery.dragtable.js"></script>
     <script>
         $(document).ready(function () {
             new Swiper('.swiper-container',{
@@ -1058,6 +1066,7 @@
             new Swiper('.swiper-container2',{
                 scrollContainer: true
             });
+            $('#currencies-page-table-fixed').dragtable();
         });
     </script>
     

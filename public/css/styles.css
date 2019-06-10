@@ -95,6 +95,11 @@ html, body {
     font-weight: 400;
 }
 
+table tr td, table tr th {
+    text-align: left !important;
+}
+
+
 #wrapper {
     height: auto !important;
     height: 100%;
@@ -865,7 +870,7 @@ ul.sign-buttons li.sign-up a:hover {
     
 }
 
-.currencies-page-table-title {
+.currencies-page-table-title th{
     overflow: hidden;
     padding: 15px 0 13px 0;
     border-bottom: 3px solid #e8eaef;
@@ -873,6 +878,7 @@ ul.sign-buttons li.sign-up a:hover {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .currencies-page-table-title span {
@@ -880,37 +886,41 @@ ul.sign-buttons li.sign-up a:hover {
     float: left;
 }
 
-.currencies-page-table-title span:nth-child(1) {
+.currencies-page-table-title .crypto-no {
     width: 3.4%;
     text-indent: 2px;
 }
-.currencies-page-table-title span:nth-child(2) {
+.currencies-page-table-title .crypto-logo {
     width: 13%;
 }
-.currencies-page-table-title span:nth-child(3) {
+.currencies-page-table-title .crypto-market-cap {
     width: 13.8%;
     text-align: right;
 }
-.currencies-page-table-title span:nth-child(4) {
+.currencies-page-table-title .crypto-price {
     width: 11.6%;
-    padding-left: 4.5%;
+    /*padding-left: 4.5%;*/
 }
-.currencies-page-table-title span:nth-child(5) {
+.currencies-page-table-title .crypto-supply {
     width: 14.4%;
 }
-.currencies-page-table-title span:nth-child(6) {
+.currencies-page-table-title .crypto-volume {
     width: 10.9%;
     text-align: right;
-    padding-right: 1%;
+    /*padding-right: 1%;*/
 }
-.currencies-page-table-title span:nth-child(7) {
+.currencies-page-table-title .crypto-change {
     width: 13%;
     text-align: right;
-    padding-right: 1%;
+    /*padding-right: 1%;*/
 }
-.currencies-page-table-title span:nth-child(8) {
+.currencies-page-table-title .crypto-graph {
     width: 13.3%;
-    text-align: right;
+    text-align: center !important;
+}
+
+.currencies-page-table-title th:nth-child(8) {
+    text-align: right !important;
 }
 
 @media screen and (max-width: 1050px) {
@@ -925,7 +935,7 @@ ul.sign-buttons li.sign-up a:hover {
 
 
 
-.currencies-page-table-item {
+.currencies-page-table-item td{
     overflow: hidden;
     padding: 24px 0 23px 0;
     border-bottom: 1px solid #e7eaee;
@@ -938,14 +948,14 @@ ul.sign-buttons li.sign-up a:hover {
     background: #fbfdff;
 }
 
-.currencies-page-table-item span:nth-child(2) img {
+.currencies-page-table-item .crypto-logo img {
     display: inline-block;
     vertical-align: middle;
     width: 21px; height: auto;
     margin: -3px 9px 0 -1px;
 }
 
-.currencies-page-table-item span:nth-child(8) img {
+.currencies-page-table-item .crypto-graph img {
     height: 37px;
     margin: -11px 0;
 }
@@ -957,45 +967,49 @@ ul.sign-buttons li.sign-up a:hover {
 }
 
 
-.currencies-page-table-item span:nth-child(1) {
+.currencies-page-table-item .crypto-no {
     width: 3.4%;
     text-indent: 4px;
     color: #6f7999;
 }
-.currencies-page-table-item span:nth-child(2) {
+.currencies-page-table-item .crypto-logo {
     width: 13%;
     margin-top: -1px;
     color: #212028;
     font-size: 17px;
     font-weight: 700;
 }
-.currencies-page-table-item span:nth-child(3) {
+.currencies-page-table-item .crypto-market-cap {
     width: 13.8%;
     text-align: right;
     color: #323143;
 }
-.currencies-page-table-item span:nth-child(4) {
+.currencies-page-table-item .crypto-price {
     width: 11.6%;
-    padding-left: 4.5%;
+    /*padding-left: 4.5%;*/
     color: #2692f9;
     font-weight: 700;
 }
-.currencies-page-table-item span:nth-child(5) {
+.currencies-page-table-item .crypto-supply {
     width: 14.4%;
 }
-.currencies-page-table-item span:nth-child(6) {
+.currencies-page-table-item .crypto-volume {
     width: 10.9%;
     text-align: right;
     padding-right: 1%;
 }
-.currencies-page-table-item span:nth-child(7) {
+.currencies-page-table-item .crypto-change {
     width: 13%;
     text-align: right;
     padding-right: 1%;
 }
-.currencies-page-table-item span:nth-child(8) {
+.currencies-page-table-item .crypto-graph {
     width: 13.3%;
     text-align: right;
+}
+
+.currencies-page-table-item td:nth-child(8) {
+    text-align: right !important;
 }
 
 @media screen and (max-width: 1050px) {
