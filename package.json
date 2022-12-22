@@ -39,7 +39,7 @@
     "image-clipper": "^0.4.4",
     "image-downloader": "^3.4.2",
     "image-size": "^0.7.3",
-    "jsonwebtoken": "7.1.9",
+    "jsonwebtoken": "9.0.0",
     "method-override": "2.3.5",
     "methods": "1.1.2",
     "mongoose": "4.4.10",
